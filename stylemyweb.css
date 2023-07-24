@@ -1,0 +1,56 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(gambar_al/paper.jpeg);
+    background-position: top center;
+    min-height: 1000px;
+}
+h1{
+    background-image: url(gambar_al/daun.jpg);
+    background-size: cover;
+    background-position: top center;
+    text-align: center;
+    font-size: 70px;
+    font-weight: bold;
+    color: white;
+    font-family:'Arial Narrow' ;
+    background-color: black;
+}
+h2{
+    color: white;
+    background-color: black;
+    font-size:22pt;
+    text-align: center;
+    line-height: 50px;
+}
+h3{
+    margin-left: 250px;
+    font-size: 32px;
+    font-weight: bold;
+    font-family:'Georgia';
+    text-decoration: underline;
+}
+div{
+    position: fixed;
+    width: 250px;
+    height: 100%;
+    background-image:url(gambar_al/daun.jpg);
+}
+a{
+    color: white;
+    
+}
+p{
+    font-size: 20px;
+}
+footer{
+    margin-top: 20%;
+    text-align: center;
+    font-size: 20px;
+    background-color: black;
+    color: white;
+}

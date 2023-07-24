@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>kalkulator 1</title>
+</head>
+<body>
+    <!--inputan html dan menginputkan data-->
+    <h1>Kalkulator sederhana 1</h1>
+    Masukan bilangan 1 :
+    <input type="text" id="bilangan1" ><br>
+    Masukan bilangan 2 :
+    <input type="text" id="bilangan2" ><br>
+    
+    <button onclick="kalkulator()" type="submit">Submit</button>
+    <hr>
+
+    <!--untuk memanggil output diatas-->
+    <div id="hpertambahan"></div>
+    <div id="hpengurangan"></div>
+    <div id="hperkalian"></div>
+    <div id="hpembagian"></div>
+    <div id="hmodulus"></div>
+
+    <!--eksekusi java script-->
+    <script>
+        function kalkulator(){
+        var bilangan1 = parseInt(document.getElementById("bilangan1").value);
+        var bilangan2 = parseInt(document.getElementById("bilangan2").value);
+
+        var pertambahan = bilangan1 + bilangan2 ;
+        var pengurangan = bilangan1 - bilangan2 ;
+        var perkalian = bilangan1 * bilangan2 ;
+        var pembagian = bilangan1 / bilangan2 ;
+        var modulus = bilangan1 % bilangan2 ;
+        
+        //ini untuk memanggil func di var lalu ditampilkan di div
+        hpertambahan.innerHTML= "<p>Penjumlahan :"+pertambahan+"</p>";
+        hpengurangan.innerHTML= "<p>pengurangan :"+pengurangan+"</p>";
+        hperkalian.innerHTML= "<p>perkalian :"+perkalian+"</p>";
+        hpembagian.innerHTML= "<p>pembagian :"+pembagian+"</p>";
+        hmodulus.innerHTML= "<p>modulus :"+modulus+"</p>";
+    }
+    </script>
+</body>
+</html>

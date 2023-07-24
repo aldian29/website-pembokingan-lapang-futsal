@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JavaScript2</title>
+    <style>
+        p{
+            color: white;
+        }
+    </style>
+</head>
+<body bgcolor="red">
+    <h1>Latihan JavaScript</h1>
+    <hr>
+    <p>nama dan angka dengan variabel</p>
+    <div id="nama"></div>
+    <div id="usia"></div>
+    <hr>
+    <p> menampilkan perhitungan dengan variabel</p>
+    <div id="hasil"></div>
+    <hr>
+    <p>array</p>
+    <div id="hasil2"></div>
+    <hr>
+    <p>object</p>
+    <div id="hasil3"></div>
+    <hr>
+    <p>array dengan perulangan</p>
+    <script>
+        //menampilkan nama/angka menggunakan vaiabel
+        var nama ="Aldian fd";
+        var usia = "18";
+
+        document.getElementById("nama").innerHTML=nama;
+        document.getElementById("usia").innerHTML=usia;
+
+        //menampilkan perhitungan dengan variabel
+        var a =5;
+        var b =2;
+
+        document.getElementById("hasil").innerHTML=a+b;
+
+        //array
+        var mahasiswa = ["ayu","fazha","gina","siska"];
+        document.getElementById("hasil2").innerHTML=mahasiswa[0];
+
+        //array dengan for(perulangan)
+        for (let i=0; i<4;i++)
+        {
+            document.write(mahasiswa[i]+" - ");
+        };
+        //object
+        
+
+    </script>
+    <script>
+        var manusia={
+            nama: "aldian",
+            alamat: "maracang",
+            umur: 18
+        };
+        document.getElementById("hasil3").innerHTML=manusia.nama+" "+"tinggal di"
+        +manusia.alamat+" "+"berusia"+" "+manusia.umur+""+"tahun.";
+    </script>
+    <!--script tugas tombol kalkulator2-->
+    <!--<form name="form">
+        bilangan 1 =
+        <input type=text name="angka1" size=3>
+        bilangan 2 =
+        <input name="angka2" type="text" size="3" />
+        <input type=button name=submit onclick="tambah()" value="+">
+        <input type=button name=submit onclick="kali()" value="X">
+        <input type=button name=submit onclick="bagi()" value="/">
+        <input type=button name=submit onclick="kurang()" value="-">
+        <input type=button name=submit onclick="modulus()" value="%"><br>
+        Hasil = <input type="text" value="" name="total" size="9">
+    </form>
+    <script>
+        function cek() {
+            if (form.angka1.value == "" || form.angka2.value == "") {
+                alert("data kosong");
+                exit;
+            }
+        }
+
+        function tambah() {
+            cek();
+            a = eval(form.angka1.value);
+            b = eval(form.angka2.value);
+            c = a + b
+            form.total.value = c;
+        }
+
+        function kali() {
+            cek();
+            a = eval(form.angka1.value);
+            b = eval(form.angka2.value);
+            c = a * b
+            form.total.value = c;
+        }
+
+        function kurang() {
+            cek();
+            a = eval(form.angka1.value);
+            b = eval(form.angka2.value);
+            c = a - b
+            form.total.value = c;
+        }
+
+        function bagi() {
+            cek();
+            a = eval(form.angka1.value);
+            b = eval(form.angka2.value);
+            c = a / b
+            form.total.value = c;
+        }
+
+        function modulus() {
+            cek();
+            a = eval(form.angka1.value);
+            b = eval(form.angka2.value);
+            c = a % b
+            form.total.value = c;
+        }
+    </script>-->
+</body>
+</html>

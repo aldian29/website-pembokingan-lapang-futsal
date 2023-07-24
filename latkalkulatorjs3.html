@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html lang="en"></html>
+<head>
+    <title>Operator Arimatik</title>
+</head>
+<body>
+    <h1>Kalkulator</h1><br>
+Masukan Bilangan 1 =
+<input type="text" id="angka1">
+Masukan Bilangan 2 =
+<input type="text" id="angka2">
+
+<select id="hasil">
+<option onclick="tambah()" type="submit">+</option>
+<option onclick="kurang()" type="submit">-</option>
+<option onclick="kali()" type="submit">x</option>
+<option onclick="bagi()" type="submit">/</option>
+<option onclick="modulus()" type="submit">%</option>
+</select>
+<hr>
+<div id="hasilnya"></div>
+
+<script>
+    function tambah(){
+        var bilangan1 = parseInt(document.getElementById("angka1").value);
+        var bilangan2 = parseInt(document.getElementById("angka2").value);
+        var pertambahan = bilangan1 + bilangan2 ;
+        hasilnya.innerHTML="<p>Hasil pertambahan : "+pertambahan+"</p>";
+
+    }
+    function kurang(){
+        var bilangan1 = parseInt(document.getElementById("angka1").value);
+        var bilangan2 = parseInt(document.getElementById("angka2").value);
+        var kurang = bilangan1 - bilangan2 ;
+        hasilnya.innerHTML="<p>Hasil pengurangan : "+kurang+"</p>";
+
+    }
+    function kali(){
+        var bilangan1 = parseInt(document.getElementById("angka1").value);
+        var bilangan2 = parseInt(document.getElementById("angka2").value);
+        var kali = bilangan1 * bilangan2 ;
+        hasilnya.innerHTML="<p>Hasil perkalian : "+kali+"</p>";
+
+    }
+    function bagi(){
+        var bilangan1 = parseInt(document.getElementById("angka1").value);
+        var bilangan2 = parseInt(document.getElementById("angka2").value);
+        var bagi = bilangan1 / bilangan2 ;
+        hasilnya.innerHTML="<p>Hasil pembagian : "+bagi+"</p>";
+
+    }
+    function modulus(){
+        var bilangan1 = parseInt(document.getElementById("angka1").value);
+        var bilangan2 = parseInt(document.getElementById("angka2").value);
+        var modulus = bilangan1 % bilangan2 ;
+        hasilnya.innerHTML="<p>Hasil modulus : "+modulus+"</p>";
+
+    }
+</script>
+
+
+</body>
+
+</html>

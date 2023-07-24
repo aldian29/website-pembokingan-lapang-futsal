@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>java script</title>
+</head>
+<body>
+    <h1>Latihan JS</h1>
+    <a href="#" onclick="alert('Laptop terserang virus!!');">click me!</a><br>
+    
+    Name : <input type="text" id="mytext" value="">
+    <p id="ket" value="">click tombol dibawah ini! </p>
+    <button onclick="myFunction()">Try me!</button>
+    <hr>
+    <div id="nama"></div>
+    <!-- untuk manggil js diluaar taro script ini src="lat1.js"-->
+    <script>
+        //document.write("ini tulisan JS");
+        function myFunction(){
+        var a = document.getElementById("mytext").value;
+        //alert("Perkenalkan nama saya aldian filzah daryanto"+a)
+        var nama = document.getElementById("nama");
+        nama.innerHTML = "<p>perkenalkan nama saya "+a+"</p>";
+        }
+    </script>
+    
+</body>
+</html>

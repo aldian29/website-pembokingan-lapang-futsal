@@ -1,0 +1,78 @@
+body{
+    background-color: black;
+}
+/*----------------------Ini bagian Judul-----------------------------*/
+header{
+    background-image:url(gambar_al/bgungu.jpeg);
+    padding: 20px;
+    height: 100px;
+}
+img{
+    width: 100px;
+}
+
+h1{
+    font-size: 29pt;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    float: inline-end ;
+    margin-top: 30px;
+    margin-right: 87%;
+}
+/*----------------------Ini bagian Body------------------------------*/
+.container{
+    display: grid;
+}
+/*----------------------Ini bagian Navigation------------------------*/
+.navigation{
+    background-color: white;
+    height: 50px;
+    font-size: 24px; 
+    text-align: center ;
+    padding-top: 10px;
+    grid-column: 1/ 6;
+}
+button{
+    margin-right: 250px;
+    font-size: 18pt;
+    text-align: center;
+}
+/*----------------------Ini bagian Sidebar----------------------------*/
+.sidebar{
+    border: 1px solid; 
+    height: auto;
+    font-size: 30px; 
+    text-align: center ;
+    grid-column:1/2 ;
+}
+#instagram{
+    color: white;
+    padding-top: -20px;
+}
+/*----------------------Ini bagian Menu-------------------------------*/
+.menu{
+    background-color: white;
+    border: 1px solid; 
+    height: auto;
+    grid-column:2/6 ;
+    padding: 10px;
+
+}
+h2{
+
+    font-size: 38px; 
+    text-align: left ;
+}
+p{
+    font-size: 18px;
+    padding-right: 200px;
+    text-align: justify;
+}
+
+
+/*----------------------Ini bagian footer-----------------------------*/
+.footer{
+    background-color: darkorchid;
+    padding: 10px;
+    height: 20px;
+}

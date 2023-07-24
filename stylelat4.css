@@ -1,0 +1,58 @@
+body{
+    background-color: floralwhite;
+}
+.container { 
+    display: grid; 
+    grid-template-columns:auto  auto auto; 
+    padding: 20px; 
+    margin-left: 5%;
+  } 
+  .container2 { 
+    display: grid; 
+    grid-template-columns:200px  200px 200px 200px; 
+    margin-left: 27%;
+    
+  } 
+  .container3 { 
+    display: grid; 
+    grid-template-columns:200px  200px ; 
+    margin-left: 37%;
+    
+  } 
+  .kotak { 
+    border: 1px solid; 
+    width: 200px;
+    height: 200px;
+    font-size: 30px; 
+    text-align: center ;
+    margin-left: 20%; 
+    line-height: 180px;
+  } 
+
+  .lingkaran{
+    width: 200px;
+	height: 200px;
+    border: 1px solid; 
+    border-radius: 100%; 
+    font-size: 30px; 
+    text-align: center; 
+    margin-left: 20%;
+    line-height: 180px;
+  }
+  .abs { 
+    border: 1px solid; 
+    width: 200px;
+    height: 200px;
+    padding: 20px; 
+    font-size: 30px; 
+    border-radius: 70px 5px; 
+    text-align: center;
+    margin-left: 20%; 
+    line-height: 180px;
+    margin-bottom: 20px;
+  } 
+  h1{
+text-align: center;
+word-spacing: 500px;
+  }
+  
